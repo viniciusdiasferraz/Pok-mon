@@ -1,0 +1,40 @@
+p {
+    color: black;
+    margin: 30px;
+}
+
+.cardmodal {
+    display: flex;
+    width: 560px;
+    background-color: rgb(255, 60, 60);
+    border-radius: 80px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.picturemodal {
+    width: 355px;
+}
+
+.imgmodal {
+    width: 265px;
+    margin-top: 90px;
+    margin-left: 50px;
+
+}
+
+
+.informationmodal {
+    background-color: #fff;
+    border-style: solid;
+    border-color: rgb(255, 60, 60);
+    border-radius: 25px 80px 80px 25px;
+
+}
+
+.buttonclose {
+    width: 20px;
+    height: 20px;
+    margin: 40px 0 0 30px;
+    position: absolute;
+}

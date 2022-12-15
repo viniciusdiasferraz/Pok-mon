@@ -1,37 +1,80 @@
-
 .startbackground {
-    background-image: url(../../../public/fundo-inicio.jpg);
-    height: 815px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: space-around;
+  background-image: url(../../../public/fundo-inicio.jpg);
+  height: 815px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-around;
 
 }
 
 
 .buttonsearch {
-    border: none;
-    background-color: rgb(255, 60, 60);
-    height: 60px;
-    width: 200px;
-    font-size: 18px;
-    border-radius: 10px;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
+  border: none;
+  background-color: rgb(255, 60, 60);
+  height: 60px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
 }
 
 .search {
-    margin-top: 12px;
-    margin-left: 600px;
+  margin-top: 12px;
+  margin-left: 600px;
 }
 
 .containersearch {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
 }
 
+.buttonyourpokemon {
+  height: 40px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: rgb(255, 60, 60);
+  border-radius: 0px 8px 8px 0px;
+  color: white;
+}
+
+
+.searchindex {
+  outline: 0;
+  border-radius: 8px 0px 0px 8px;
+  padding: 10px;
+}
+
+/* reponsividade */
+
+@media (max-width:480px) {
+  .startbackground {
+    background-image: url(../../../public/pokmobile.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .containersearch {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .searchindex {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .buttonyourpokemon {
+    border-radius: 8px;
+    width: 197px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

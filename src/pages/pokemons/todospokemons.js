@@ -52,9 +52,13 @@ function Pokemons() {
 
 	}
 
+	const closeModal = () => {
+    setModalIsOpen(!modalIsOpen)
+  }
+
 	return (
 		<>
-			<div className='containerall'>
+			<div onClick={() => closeModal()} className='containerall'>
 				<Header />
 				<div className='inputsearchpokemon'>
 					<input onChange={(e) => pokemonFilter(e.target.value)} className='searchpokemon' type="search" id='pesquisa' name="q" placeholder="Buscar pokémon"></input>

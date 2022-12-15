@@ -2,14 +2,14 @@
     width: 100%;
 }
 
-.inputsearchpokemon{
+.inputsearchpokemon {
     background-color: rgba(145, 145, 145, 0.767);
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.searchpokemon{
+.searchpokemon {
     margin-right: 10px;
     height: 30px;
     border-radius: 10px;
@@ -51,7 +51,8 @@
 }
 
 .namepokemon {
-    color: #3b3b3b;;
+    color: #3b3b3b;
+    ;
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
@@ -63,4 +64,24 @@
     left: 0;
     right: 0;
     width: 100%;
+}
+
+/* responsividade */
+
+@media (max-width:480px) {
+    .searchpokemon {
+        width: 93%;
+    }
+
+    .cardpokemon {
+        width: 250px;
+        height: 350px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .searchpokemon {
+        width: 96%;
+    }
 }

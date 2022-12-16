@@ -76,9 +76,12 @@
     .cardpokemon {
         width: 250px;
         height: 350px;
+        margin-bottom: 0px;
+        margin-top: 60px;
     }
-
 }
+
+
 
 @media (max-width:768px) {
     .searchpokemon {

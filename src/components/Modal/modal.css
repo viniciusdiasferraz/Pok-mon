@@ -39,3 +39,45 @@ p {
     margin: 40px 0 0 30px;
     position: absolute;
 }
+
+/* Responsividade */
+
+
+@media (max-width:768px) {
+    .cardmodal {
+        width: 465px;
+    }
+    
+    .imgmodal {
+        width: 265px;
+        margin-top: 90px;
+        margin-left: 9px;
+    }
+    
+}
+
+@media (max-width:480px) {
+    .cardmodal {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 555px
+    }
+
+    .informationmodal {
+        height: 220px;
+        width: 280px;
+        border-radius: 3.5rem;
+
+    }
+
+    p {
+        margin: 8px;
+        margin-left: 36px;
+    }
+
+    .imgmodal {
+        margin: 19px
+    }
+
+}

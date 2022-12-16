@@ -13,31 +13,34 @@ export default function Body() {
 
 
   const PokemonSelected = () => {
-    axios
-      .get(
-        `https://pokeapi.co/api/v2/pokemon/${poke}`,
-      )
-      .then((response) => {
-        setValores1(response.data);
-        setModalIsOpen(true);
-      })
-  }
-
+    if (poke) {
+      axios
+        .get(
+          `https://pokeapi.co/api/v2/pokemon/${poke}`,
+        )
+        .then((response) => {
+          setValores1(response.data);
+          setModalIsOpen(true);
+        })
+        .catch(() => alert("Esse Pokémon não existe!"))
+      }
+      
+      else if (poke === "") { 
+        alert("Digite um Pokémon")
+    }    
+    }
+    
   const closeModal = () => {
     setModalIsOpen(false);
 
   }
 
-  const fail = () => {
-    if (poke === '')
-    alert("Digite o pokémon desejado!")
-  }
 
   return (
     <div onClick={() => closeModal()} className="startbackground">
       <div className='containersearch'>
         <input onChange={(e) => setPoke(e.target.value.toLowerCase(poke))} className='searchindex' type="search" placeholder="Pesquise seu pokémon"></input>
-        <button className="buttonyourpokemon" onClick={() => {PokemonSelected(); fail()}}>Buscar</button>
+        <button className="buttonyourpokemon" onClick={() => { PokemonSelected() }}>Buscar</button>
         <button className="buttonsearch" onClick={() => window.location.href = 'http:/todospokemons'}> Veja todos os pokémons</button>
       </div>
 

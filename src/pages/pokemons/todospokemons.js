@@ -57,7 +57,7 @@ function Pokemons() {
   }
 
 	return (
-		<>
+		
 			<div onClick={() => closeModal()} className='containerall'>
 				<Header />
 				<div className='inputsearchpokemon'>
@@ -71,12 +71,12 @@ function Pokemons() {
 							const splitNumber = split1?.split('/')[0];
 							
 							return (
-								<>
+								
 									<div className='cardpokemon' onClick={() => selectPokemon(item.name)} >
 										<img className='imgpokemon' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${splitNumber}.png`} />
 										<p className='namepokemon'>{item.name}</p>
 									</div>
-								</>
+								
 							)
 						})
 					}
@@ -101,7 +101,7 @@ function Pokemons() {
 				</div>
 				<Footer />
 			</div>
-		</>
+		
 	)
 }
 

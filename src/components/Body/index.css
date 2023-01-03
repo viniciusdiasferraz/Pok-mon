@@ -1,6 +1,6 @@
 .startbackground {
   background-image: url(../../../public/fundo-inicio.jpg);
-  height: 84.8vh;
+  height: 85.5vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 .buttonyourpokemon {
-  height: 40px;
+  height: 39px;
   width: 60px;
   margin-right: 20px;
   background-color: rgb(255, 60, 60);

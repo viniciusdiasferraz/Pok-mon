@@ -58,7 +58,7 @@ function Pokemons() {
 
 	return (
 		
-			<div onClick={() => closeModal()} className='containerall'>
+			<div  className='containerall'>
 				<Header />
 				<div className='inputsearchpokemon'>
 					<input onChange={(e) => pokemonFilter(e.target.value)} className='searchpokemon' type="search" id='pesquisa' name="q" placeholder="Buscar pokémon"></input>
@@ -83,7 +83,9 @@ function Pokemons() {
 				</div>
 
 				<div className='modal'>
-					{valores &&
+					{valores && modalIsOpen &&
+					<>
+					<div onClick={() => closeModal()} className='close'></div>
 						<Modal
 							imagem={valores?.sprites?.other["official-artwork"]?.front_default}
 							name={valores?.name}
@@ -97,6 +99,7 @@ function Pokemons() {
 							setIsOpen={setModalIsOpen}
 							isOpen={modalIsOpen}
 						/>
+						</>
 					}
 				</div>
 				<Footer />
